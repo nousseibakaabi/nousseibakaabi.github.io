@@ -924,6 +924,30 @@
                 padding-top: 30px;
             }
         }
+
+        /* Tags Container */
+        .tags-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .tag {
+            background: var(--glass-bg);
+            border: 1px solid var(--border-light);
+            border-radius: 16px;
+            padding: 8px 16px;
+            font-size: 0.9rem;
+            color: var(--text-primary);
+            transition: var(--transition);
+            display: inline-block;
+        }
+
+        .tag:hover {
+            border-color: var(--accent-cyan);
+            background: rgba(0, 217, 255, 0.05);
+        }
     </style>
 </head>
 <body>
@@ -957,6 +981,7 @@
                 <div class="hero-btns">
                     <a href="#contact" class="btn">Me Contacter</a>
                     <a href="#projects" class="btn btn-outline">Voir Mes Projets</a>
+                    <a href="CV%20fr.pdf" class="btn btn-download" download>Télécharger Mon CV</a>
                 </div>
             </div>
         </div>
@@ -970,8 +995,8 @@
             </div>
             <div class="about-content">
                 <div class="about-img">
-                    <div class="img-placeholder">
-                        <i class="fas fa-user"></i>
+                    <div class="img-placeholder" style="background: none;">
+                        <img src="image.png" alt="Kaabi Nousseiba" class="profile-photo" style="border-radius: 50%; width: 100%; height: 100%; object-fit: cover;">
                     </div>
                 </div>
                 <div class="about-text">
@@ -982,23 +1007,22 @@
                     <div class="about-info">
                         <div class="info-item">
                             <i class="fas fa-user"></i>
-                            <span><strong>Nom:</strong> Kaabi Nousseiba</span>
+                            <span><strong>Kaabi Nousseiba</strong> </span>
                         </div>
                         <div class="info-item">
                             <i class="fas fa-phone"></i>
-                            <span><strong>Téléphone:</strong> 27 405 659</span>
+                            <span><strong>27 405 659</strong> </span>
                         </div>
                         <div class="info-item">
                             <i class="fas fa-envelope"></i>
-                            <span><strong>Email:</strong> nousseiba.kaabi@esprit.tn</span>
+                            <span><strong> nousseiba.kaabi@esprit.tn</strong></span>
                         </div>
                         <div class="info-item">
                             <i class="fas fa-map-marker-alt"></i>
-                            <span><strong>Localisation:</strong> Ariana, Tunisie</span>
+                            <span><strong>Ariana, Tunisie</strong> </span>
                         </div>
                     </div>
                     
-                    <a href="#" class="btn">Télécharger mon CV</a>
                 </div>
             </div>
         </div>
@@ -1073,7 +1097,50 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Tags Container -->
+            <div class="tags-container">
+                <span class="tag">C</span>
+                <span class="tag">C++</span>
+                <span class="tag">C#</span>
+                <span class="tag">HTML</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">PHP</span>
+                <span class="tag">Java</span>
+                <span class="tag">CSS</span>
+                <span class="tag">Symfony</span>
+                <span class="tag">JavaFX</span>
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Express</span>
+                <span class="tag">Angular</span>
+                <span class="tag">SpringBoot</span>
+                <span class="tag">.NET</span>
+                <span class="tag">Laravel</span>
+                <span class="tag">Django</span>
+                <span class="tag">Docker</span>
+                <span class="tag">Jenkins</span>
+                <span class="tag">Arduino</span>
+                <span class="tag">CodeBlocks</span>
+                <span class="tag">Visual Studio Code</span>
+                <span class="tag">IntelliJ IDEA</span>
+                <span class="tag">Git</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">Oracle</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">H2</span>
+                <span class="tag">Microservices</span>
+                <span class="tag">CI/CD Pipelines</span>
+                <span class="tag">Linux</span>
+                <span class="tag">Windows</span>
+                <span class="tag">Scene Builder</span>
+                <span class="tag">Adobe Illustrator</span>
+                <span class="tag">Photoshop</span>
+                <span class="tag">AfterEffect</span>
+                <span class="tag">Figma</span>
+            </div>
         </div>
+        
     </section>
 
     <!-- Experience Section -->
@@ -1090,6 +1157,28 @@
                         <p>Cycle ingénieur en Informatique (Bac+5). Spécialisation en développement web et nouvelles technologies.</p>
                     </div>
                 </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2020 – 2021</div>
+                        <h3>Baccalauréat Technique</h3>
+                        <p>Obtention du baccalauréat technique au Lycée Wafa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <br >
+        <br>
+        <br>
+        <br>
+
+        <div class="container">
+            <div class="section-title">
+                <h2>Mes stages</h2>
+            </div>
+            <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-content">
                         <div class="timeline-date">Juin 2025 – Août 2025</div>
@@ -1106,9 +1195,9 @@
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <div class="timeline-date">2020 – 2021</div>
-                        <h3>Baccalauréat Technique</h3>
-                        <p>Obtention du baccalauréat technique au Lycée Wafa.</p>
+                        <div class="timeline-date">Août 2024</div>
+                        <h3>Stage de formation humaine et sociale - Tunisie Télécom</h3>
+                        <p>Développement des compétences relationnelles et compréhension des enjeux sociaux en entreprise.</p>
                     </div>
                 </div>
             </div>
@@ -1124,7 +1213,8 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-img">
-                        <i class="fas fa-brain"></i>
+                        <i class="fab fa-python"></i>
+                        <i class="fas fa-database"></i>
                     </div>
                     <div class="project-content">
                         <h3>MindUse - Journal Intelligent IA</h3>
@@ -1135,13 +1225,16 @@
                             <span class="tech-tag">MySQL</span>
                             <span class="tech-tag">IA</span>
                         </div>
-                        <a href="#" class="btn">Voir le projet</a>
+                        <a href="https://github.com/nousseibakaabi/MindUse" class="btn">Voir le projet</a>
                     </div>
                 </div>
                 
                 <div class="project-card">
                     <div class="project-img">
                         <i class="fas fa-leaf"></i>
+                        <i class="fab fa-laravel"></i>
+                        <i class="fab fa-js"></i>
+                        <i class="fas fa-database"></i>
                     </div>
                     <div class="project-content">
                         <h3>ReLeaf - Plateforme Éco-Événements</h3>
@@ -1151,14 +1244,20 @@
                             <span class="tech-tag">PHP</span>
                             <span class="tech-tag">MySQL</span>
                             <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">APIs</span>
+                            <span class="tech-tag">IA</span>
+                            <span class="tech-tag">GitHub</span>
+                            <span class="tech-tag">Bootstrap</span>
                         </div>
-                        <a href="https://github.com/nousseibakaabi" class="btn">Voir le projet</a>
+                        <a href="https://github.com/nousseibakaabi/ReLeaf" class="btn">Voir le projet</a>
                     </div>
                 </div>
                 
                 <div class="project-card">
                     <div class="project-img">
-                        <i class="fas fa-tasks"></i>
+                        <i class="fab fa-react"></i>
+                        <i class="fab fa-node-js"></i>
+                        <i class="fas fa-database"></i>
                     </div>
                     <div class="project-content">
                         <h3>Lavoro - Gestion de Projets</h3>
@@ -1166,12 +1265,95 @@
                         <div class="project-tech">
                             <span class="tech-tag">React</span>
                             <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">ExpressJS</span>
                             <span class="tech-tag">MongoDB</span>
                             <span class="tech-tag">JWT</span>
+                            <span class="tech-tag">IA</span>
+
+
                         </div>
-                        <a href="#" class="btn">Voir le projet</a>
+                        <a href="https://github.com/nousseibakaabi/Lavoro" class="btn">Voir le projet</a>
                     </div>
+                    
                 </div>
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <i class="fab fa-docker"></i>
+                        <i class="fab fa-angular"></i>
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>BOOKI - Plateforme E-commerce de Livres basée sur des Microservices </h3>
+                        <p>Développement d’une architecture scalable microservices avec 6 services indépendants avec la mise en place d’une API Gateway et d’un système de découverte de services.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Eureka</span>
+                            <span class="tech-tag">Keycloak</span>
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">Gateway</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                        <a href="https://github.com/nousseibakaabi/Booki-Microservice" class="btn">Voir le projet</a>
+                    </div>
+                    
+                </div>
+
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <i class="fab fa-jenkins"></i>
+                        <i class="fab fa-docker"></i>
+                        <i class="fab fa-angular"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Pipeline DevOps CI/CD Automatisée </h3>
+                        <p>Déploiement d’une infrastructure DevOps complète pour automatiser les builds, tests et déploiements et monitoring avancé avec Grafana et Prometheus.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Jenkins</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">SonarQube</span>
+                            <span class="tech-tag">DockerCompose</span>
+                            <span class="tech-tag">DockerHub</span>
+                            <span class="tech-tag">Grafana</span>
+                            <span class="tech-tag">Prometheus</span>
+                            <span class="tech-tag">SpringBoot</span>
+                            <span class="tech-tag">Git</span>
+                            <span class="tech-tag">JUnit</span>
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">Nexus</span>
+                        </div>
+                        <a href="https://github.com/nousseibakaabi/DEVOPS" class="btn">Voir le projet</a>
+                    </div>
+                    
+                </div>
+
+
+                   <div class="project-card">
+                    <div class="project-img">
+                        <i class="fab fa-java"></i>
+                        <i class="fab fa-symfony"></i>
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>TanitOnline – Application d’E-learning  </h3>
+                        <p>Développement d’une application multiplateforme pour la gestion d’événements et utilisateurs et l'intégration de bundles externes et d’un template web avec Symfony.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">JavaFX</span>
+                            <span class="tech-tag">Symfony</span>
+                            <span class="tech-tag">Xampp</span>
+                            <span class="tech-tag">UML</span>
+                            <span class="tech-tag">Git</span>
+                        </div>
+                        <a href="https://github.com/nousseibakaabi/JAVA-SYMFONY" class="btn">Voir le projet</a>
+                    </div>
+                    
+                </div>
+
+
             </div>
         </div>
     </section>
@@ -1213,9 +1395,8 @@
                     
                     <div class="social-links">
                         <a href="https://www.linkedin.com/in/nousseiba-kaabi-20799223a" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://github.com/nousseibakaabi"><i class="fab fa-github"></i></a>
+                        <a href="https://www.facebook.com/nouss.nouss.39"><i class="fab fa-facebook-f"></i></a>
                     </div>
                 </div>
                 
